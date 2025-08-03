@@ -69,7 +69,7 @@ public class Other {
         String result = "";
         
         String vowels = "aeiou";
-        String consonants = "bcdfghjklmnprstqvwxyz";
+        String consonants = "bcdfghjklmnpqrstvwxyz";
 
 
         for (int i = 0; i < text.length(); i++) {

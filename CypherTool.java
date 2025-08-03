@@ -137,7 +137,7 @@ public class CypherTool {
         String userInput = scanner.nextLine().trim();
 
         // check if the user wants to exit the program
-        if (userInput == "exit") {
+        if (userInput.equals("exit")) {
             inputData.isExit = true;
         }
 

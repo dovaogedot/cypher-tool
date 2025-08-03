@@ -52,7 +52,6 @@ public class Other {
                 else
                     vowelIndex = vowelIndex - 1;
 
-                // if the character was uppercase, make the character from vowels also uppercase
                 newCharacter = vowels.charAt(vowelIndex);
 
 
@@ -68,7 +67,7 @@ public class Other {
             }
 
 
-            // if the character was uppercase, make the character from vowels also uppercase
+            // if the character was uppercase, make the modified character also uppercase
             if (Character.isUpperCase(character))
                 newCharacter = Character.toUpperCase(newCharacter);
 
@@ -131,7 +130,7 @@ public class Other {
                 newCharacter = consonants.charAt(index);
             }
 
-            // if the character was uppercase, make the character from vowels also uppercase
+            // if the character was uppercase, make the modified character also uppercase
             if (Character.isUpperCase(character))
                 newCharacter = Character.toUpperCase(newCharacter);
 

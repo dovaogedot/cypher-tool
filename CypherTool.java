@@ -125,17 +125,25 @@ public class CypherTool {
         result);
     }
 
+
     public static InputData getInput() {
+        // prepare the data that we will return
         InputData inputData = new InputData();
-        
+
+        // create a scanner that will read user's input from the terminal
         Scanner scanner = new Scanner(System.in);
+
+        // read the line that user enters and remove extra space in start and end
         String userInput = scanner.nextLine().trim();
 
+        // check if the user wants to exit the program
         if (userInput == "exit") {
             inputData.isExit = true;
         }
 
+        // store the user's input and return it
         inputData.text = userInput;
+
         return inputData;
     }
 

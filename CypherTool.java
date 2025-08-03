@@ -2,6 +2,14 @@ import java.util.Scanner;
 
 public class CypherTool {
     public static void main(String[] args) {
+        StartCLI();
+    }
+
+    /**
+     * Initiates a conversation with the user using standard input/output
+     * allowing the user to encrypt or decrypt a message using different cyphers
+     */
+    private static void StartCLI() {
         // greet the user
         System.out.println("\nWelcome to the Cypher Tool!");
 
@@ -125,7 +133,9 @@ public class CypherTool {
         result);
     }
 
-
+    /**
+     * Reads user's input from standard input stream.
+     */
     public static InputData getInput() {
         // prepare the data that we will return
         InputData inputData = new InputData();

@@ -1,10 +1,24 @@
+/**
+ * Switches every vowel with the previous vowel in the alphabet
+ * and every consonant with the next consonant in the alphabet.
+ * 
+ * @implNote works only with English letters
+ */
 public class Other {
 
+    /**
+     * Checks if a character is a letter of English alphabet.
+     */
     private static boolean isEnglishLetter(char character) {
         return (character >= 'a' && character <= 'z')
             || (character >= 'A' && character <= 'Z');
     }
 
+    /**
+     * Encrypts the message
+     * @param text - the message to be encrypted
+     * @return the encrypted message
+     */
     public static String encrypt(String text) {
         String result = "";
         
@@ -65,6 +79,11 @@ public class Other {
         return result;
     }
 
+    /**
+     * Decrypts the message
+     * @param text - the message to be decrypted
+     * @return the decrypted message
+     */
     public static String decrypt(String text) {
         String result = "";
         
@@ -130,6 +149,6 @@ public class Other {
         System.out.println("Encrypted: " + encryptedmessage);
 
         String decryptedmessage = Other.decrypt(encryptedmessage);
-        System.out.println("Encrypted: " + decryptedmessage);
+        System.out.println("Decrypted: " + decryptedmessage);
     }
 }

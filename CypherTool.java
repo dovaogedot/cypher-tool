@@ -110,9 +110,9 @@ public class CypherTool {
         
             case "Other":
                 if (operation.equals("Encrypt"))
-                    result = encryptAtbash(message);
+                    result = encryptOther(message);
                 else
-                    result = decryptAtbash(message);
+                    result = decryptOther(message);
                 break;
     
             default:
@@ -155,11 +155,19 @@ public class CypherTool {
         return Atbash.encrypt(s);
     }
 
+    public static String encryptOther(String s) {
+        return Other.encrypt(s);
+    }
+
     public static String decryptRot13(String s) {
         return Rot13.encrypt(s);
     }
 
     public static String decryptAtbash(String s) {
         return Atbash.encrypt(s);
+    }
+
+    public static String decryptOther(String s) {
+        return Other.decrypt(s);
     }
 }

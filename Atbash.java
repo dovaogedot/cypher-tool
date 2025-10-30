@@ -1,3 +1,6 @@
+/**
+ * @author Karin Hakmann
+ */
 public class Atbash{
     // Turn each letter into its opposite in the alphabet (A<->Z, a<->z).
    

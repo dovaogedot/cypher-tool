@@ -3,6 +3,7 @@
  * and every consonant with the next consonant in the alphabet.
  * 
  * @implNote works only with English letters
+ * @author Vladyslav Havrilov
  */
 public class Other {
 

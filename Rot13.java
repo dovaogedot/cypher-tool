@@ -1,3 +1,6 @@
+/**
+ * @author Marie Pohlak
+ */
 public class Rot13 {
 
     // See meetod võtab sisendina suvalise teksti (String) ja tagastab ROT13-ga krüpteeritud teksti.

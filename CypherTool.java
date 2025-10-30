@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+/**
+ * Encrypts and decrypts string of text.
+ * 
+ * @author Vladyslav Havrilov
+ */
 public class CypherTool {
     public static void main(String[] args) {
         StartCLI();
